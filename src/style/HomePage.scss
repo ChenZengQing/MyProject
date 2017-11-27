@@ -1,0 +1,242 @@
+@import 'Px2rem';
+
+div
+{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    z-index: 80;
+    text-align: center;
+    width: 100%;
+    height: px2rem(82);
+    padding-top: px2rem(6);
+    box-shadow: 0 1px 0 0 rgba(207,207,207,0.50);
+    background: #fff;
+    img {
+        width: px2rem(214);
+        height: px2rem(84);
+        vertical-align: middle;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 200;
+    width: 100%;
+    height: px2rem(96);
+    background: #FFFFFF;
+    box-shadow: 0 -1px 0 0 rgba(207,207,207,0.50);
+    .cart-big {
+        position: absolute;
+        left: px2rem(32);
+        top: px2rem(28);
+        width: px2rem(52);
+        height: px2rem(40);
+        img {
+            width: 100%;
+        }
+        .cart-big-num {
+            position: absolute;
+            top: px2rem(-10);
+            right: px2rem(-10);
+            background: #FF7171;
+            width: px2rem(32);
+            height: px2rem(32);
+            border-radius: 50%;
+            text-align: center;
+            font-size: px2rem(24);
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: px2rem(32);
+        }
+    }
+    .total {
+        position: absolute;
+        top: px2rem(26);
+        left: px2rem(150);
+        line-height: px2rem(44);
+        font-size: px2rem(32);
+        color: #333333;
+    }
+    .calculate {
+        width: px2rem(232);
+        height: px2rem(76);
+        position: absolute;
+        top: px2rem(10);
+        right: px2rem(30);
+        background: #00D6D3;
+        border-radius: px2rem(12);
+        font-size: px2rem(36);
+        line-height: px2rem(76);
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: px2rem(350);
+    left: 0;
+    li {
+        text-align: center;
+        width: px2rem(36);
+        padding: px2rem(5) 0;
+        margin-bottom: px2rem(28);
+        font-size: px2rem(24);
+        color: #666666;
+        letter-spacing: 0;
+        line-height: px2rem(26);
+    }
+    .active {
+        background: #00D6D3;
+        border-radius: px2rem(4);
+        padding-top: px2rem(4);
+        color: #fff;
+    }
+}
+.shelves {
+    padding-top: px2rem(88);
+    padding-bottom: px2rem(96);
+    overflow: hidden;
+    /*height: px2rem(1100);*/
+    li {
+        padding-top: px2rem(32);
+        margin-bottom: px2rem(32);
+        .title {
+            margin-left: px2rem(30);
+            margin-right: px2rem(30);
+            height: px2rem(56);
+            background: rgba(0,214,211,0.15);
+            text-align: center;
+            line-height: px2rem(56);
+            font-size: px2rem(32);
+            color: #00D6D3;
+        }
+        .snacks-wrapper {
+            margin-left: px2rem(14);
+            .snacks-item {
+                width: px2rem(210);
+                float: left;
+                margin-left: px2rem(24);
+                margin-top: px2rem(32);
+                margin-bottom: px2rem(24);
+                .snacks-img {
+                    width: px2rem(210);
+                    height: px2rem(160);
+                    margin-bottom: px2rem(8);
+                    img {
+                        width: px2rem(210);
+                        height: px2rem(160);
+                    }
+                }
+                .snacks-intro {
+                    margin-bottom: px2rem(4);
+                    font-size: px2rem(24);
+                    line-height: px2rem(34);
+                    height: px2rem(68);
+                    color: #333333;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    /* autoprefixer: off */
+                    -webkit-box-orient: vertical;
+                    /* autoprefixer: on */
+                }
+                .snacks-price {
+                    font-size: px2rem(28);
+                    color: #FF7171;
+                }
+                .purchase-now {
+                    display: inline-block;
+                    text-align: center;
+                    width: px2rem(128);
+                    height: px2rem(42);
+                    line-height: px2rem(42);
+                    font-size: px2rem(24);
+                    color: #FFFFFF;
+                    background: #00D6D3;
+                    border-radius: px2rem(8);
+                    margin-right: px2rem(16);
+                }
+                .cart-small {
+                    width: px2rem(40);
+                    height: px2rem(42);
+                    position: relative;
+                    img {
+                        width: px2rem(40);
+                        height: px2rem(42);
+                    }
+                    .cart-small-num {
+                        position: absolute;
+                        top: px2rem(-10);
+                        right: px2rem(-10);
+                        background: #FF7171;
+                        width: px2rem(32);
+                        height: px2rem(32);
+                        border-radius: 50%;
+                        text-align: center;
+                        font-size: px2rem(24);
+                        color: #FFFFFF;
+                        letter-spacing: 0;
+                        line-height: px2rem(32);
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.unselected {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.40);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    p {
+        text-align: center;
+        width: px2rem(200);
+        height: px2rem(64);
+        background: #000;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-left: px2rem(-100);
+        margin-top: px2rem(-18);
+        font-size: px2rem(28);
+        line-height: px2rem(64);
+        color: #fff;
+        border-radius: px2rem(8);
+    }
+}
+.inventory {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.40);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .inventory-wrapper {
+        padding: px2rem(40);
+        text-align: center;
+        background: rgba(0,0,0,0.7);
+        margin-top: px2rem(300);
+        margin-left: px2rem(40);
+        margin-right: px2rem(40);
+        border-radius: px2rem(8);
+        color: #fff;
+        font-size: px2rem(24);
+        line-height: px2rem(48);
+    }
+}
+.clear:after{content:"";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
